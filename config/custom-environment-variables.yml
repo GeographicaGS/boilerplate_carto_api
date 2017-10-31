@@ -1,0 +1,6 @@
+carto:
+  user: CARTO_USER
+  apiKey: CARTO_API_KEY
+
+auth:
+  secret: AUTH_SECRET

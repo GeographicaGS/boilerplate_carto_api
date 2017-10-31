@@ -1,0 +1,11 @@
+version: 1.0.0
+name: 'Boilerplate API'
+carto:
+  protocol: https
+  host: carto.com
+
+auth:
+  tokenExpiration: 86400
+  userTable: users
+  userNameColum: username
+  userPasswordColumn: password
