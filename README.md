@@ -1,1 +1,1 @@
-# waze
+# boiler plate
