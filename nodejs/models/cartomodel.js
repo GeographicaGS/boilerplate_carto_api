@@ -36,7 +36,7 @@ class CartoModel {
 
       this._sql.execute(opts.query, opts.params)
         .done(data => {
-          if (opts.format = 'geojson'){
+          if (opts.format == 'geojson'){
             // TODO: Improve via piping
             return resolve(JSON.parse(data));
           }
