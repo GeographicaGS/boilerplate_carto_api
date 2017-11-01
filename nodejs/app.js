@@ -31,6 +31,11 @@ app.use(function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'x-auth-username, x-auth-password, Authorization, Content-Type');
   res.header('Access-Control-Allow-Methods', 'OPTIONS, GET, POST, PUT, DELETE');
+
+  if (req.method === 'OPTIONS') {
+    res.end();
+  }
+  
   next();
 });
 
