@@ -11,6 +11,6 @@ const router = express.Router();
 
 router.get('/getToken', getToken);
 
-router.get('/renewToken',  auth, renewToken);
+router.get('/renewToken',  auth(), renewToken);
 
 module.exports = router;
