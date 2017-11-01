@@ -79,6 +79,9 @@ let _jwtVerify = function(user, next) {
 passport.use(new JwtStrategy(jwtStrategyOpts, _jwtVerify));
 
 let _auth = function(req, res, next) {
+  if (req.method === 'OPTIONS') {
+    return next();
+  }
   return passport.authenticate('jwt', { session: false })(req, res, next);
 }
 let _initialize = function(req, res, next) {
